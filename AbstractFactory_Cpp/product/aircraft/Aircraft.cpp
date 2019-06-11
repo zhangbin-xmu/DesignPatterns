@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Aircraft::Aircraft() 
+Aircraft::Aircraft()
 {
     cout << "Aircraft ..." << endl;
 }

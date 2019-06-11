@@ -3,7 +3,7 @@ CC=gcc
 CXX=g++
 RM=rm -f
 
-SRCS := $(wildcard *.cpp ./factory/*.cpp ./product/*.cpp)
+SRCS := $(wildcard *.cpp ./factory/*.cpp ./product/*/*.cpp)
 OBJS := $(SRCS:%.cpp=%.o)
 
 

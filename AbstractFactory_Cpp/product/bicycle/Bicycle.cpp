@@ -3,7 +3,7 @@
 
 using namespace std;
 
-Bicycle::Bicycle() 
+Bicycle::Bicycle()
 {
     cout << "Bicycle ..." << endl;
 }
