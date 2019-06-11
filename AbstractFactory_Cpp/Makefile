@@ -1,6 +1,4 @@
 #############################
-## Makefile for module VehicleFactory
-
 CC=gcc
 CXX=g++
 RM=rm -f
