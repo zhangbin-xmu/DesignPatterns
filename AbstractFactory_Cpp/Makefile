@@ -1,5 +1,5 @@
 #############################
-## Makefile for module AbstractFactory
+## Makefile for module VehicleFactory
 
 CC=gcc
 CXX=g++

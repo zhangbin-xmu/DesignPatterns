@@ -1,19 +1,20 @@
 #include <iostream>
-#include "factory/ConcreteFactoryA.h"
-#include "factory/ConcreteFactoryB.h"
+#include "factory/AircraftFactory.h"
+#include "factory/BicycleFactory.h"
+#include "factory/CarFactory.h"
 
 int main() 
 {
-    AbstractFactory* factory = new ConcreteFactoryA();
-    Aircraft* aircraft = factory->CreateAircraft();
-    Bicycle* bicycle = factory->CreateBicycle();
+    VehicleFactory* VehicleFactory = new AircraftFactory();
+    Vehicle* vehicle = VehicleFactory->CreateVehicle();
 
-    factory = new ConcreteFactoryB();
-    aircraft = factory->CreateAircraft();
-    bicycle = factory->CreateBicycle();
+    VehicleFactory = new BicycleFactory();
+    vehicle = VehicleFactory->CreateVehicle();
 
-    delete factory;
-    delete aircraft;
-    delete bicycle;
+    VehicleFactory = new CarFactory();
+    vehicle = VehicleFactory->CreateVehicle();
+
+    delete vehicle;
+    delete VehicleFactory;
     return 0;
 }

@@ -1,13 +1,13 @@
 #ifndef _BICYCLE_H_
 #define _BICYCLE_H_
 
-class Bicycle
+#include "Vehicle.h"
+
+class Bicycle : public Vehicle
 {
 public:
-    virtual ~Bicycle() = 0;
-
-protected:
     Bicycle();
+    virtual ~Bicycle();
 };
 
 #endif

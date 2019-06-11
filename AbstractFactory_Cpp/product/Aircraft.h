@@ -1,13 +1,13 @@
 #ifndef _AIRCRAFT_H_
 #define _AIRCRAFT_H_
 
-class Aircraft
+#include "Vehicle.h"
+
+class Aircraft : public Vehicle
 {
 public:
-    virtual ~Aircraft() = 0;
-
-protected:
     Aircraft();
+    virtual ~Aircraft();
 };
 
 #endif
