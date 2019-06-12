@@ -1,4 +1,3 @@
-#include <iostream>
 #include "factory/VehicleFactoryNorth.h"
 #include "factory/VehicleFactorySouth.h"
 

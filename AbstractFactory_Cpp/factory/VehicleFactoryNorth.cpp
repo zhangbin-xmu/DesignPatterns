@@ -1,8 +1,8 @@
 #include <iostream>
 #include "VehicleFactoryNorth.h"
-#include "../product/aircraft/AircraftHelicopter.h"
-#include "../product/bicycle/BicycleMountain.h"
-#include "../product/car/CarBus.h"
+#include "../product/aircraft/AircraftJet.h"
+#include "../product/bicycle/BicycleRoad.h"
+#include "../product/car/CarTruck.h"
 
 using namespace std;
 
@@ -18,15 +18,15 @@ VehicleFactoryNorth::~VehicleFactoryNorth()
 
 Aircraft* VehicleFactoryNorth::CreateAircraft()
 {
-    return new AircraftHelicopter();
+    return new AircraftJet();
 }
 
 Bicycle* VehicleFactoryNorth::CreateBicycle()
 {
-    return new BicycleMountain();
+    return new BicycleRoad();
 }
 
 Car* VehicleFactoryNorth::CreateCar()
 {
-    return new CarBus();
+    return new CarTruck();
 }
